@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Philosophy Random Quote Machine</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mate+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css"
+    />
+  </head>
+  <body>
+    <img
+      src="assets/丁世伟-哲学.jpg"
+      alt="Art Composition &lt;Goodbye Utopia&gt; by Ding Shiwei"
+    />
+    <div id="quote-box">
+      <div id="quote">
+        <div id="text"></div>
+        <div id="author"></div>
+      </div>
+
+      <div id="buttons">
+        <p id="new-quote" data-balloon="Next Quote" data-balloon-pos="up-right">
+          Enlighten<br />
+          Me
+        </p>
+
+        <p data-balloon="Tweet Quote" data-balloon-pos="up-left">
+          <a href="twitter.com/intent/tweet" id="tweet-quote">
+            Enlighten<br />
+            Others
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

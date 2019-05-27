@@ -1,0 +1,134 @@
+/*---------------------- global setting -----------------------*/
+* {
+  font-family: "Mate SC", serif;
+  color: #606066;
+  font-size: 36px;
+}
+
+/*---------------------- 
+    background-picture
+    
+    Title: Goodbye Utopia 
+    Director: Ding Shiwei 
+    Producer: Han Hui 
+    Country/Area: ChinaYear of Production: 2014 
+    Screenplay: Ding Shiwei 
+    Design: Li Hong, Lei Jun, etc. 
+    Music: Guo Yaoxian 
+    Length: 7 mins 31 secs
+-------------------*/
+img {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: auto;
+  opacity: 0.4;
+}
+@media (max-width: 1024px) {
+  img {
+    display: inline-block;
+    position: fixed;
+    height: 55vh;
+    object-fit: cover;
+  }
+}
+
+/*--------------------- layout --------------------------*/
+#quote-box {
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/*-------------------- quote ------------------------*/
+
+#quote {
+  position: fixed;
+  height: 45vmin;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  padding-top: 5vmin;
+}
+#text {
+  margin: 0 3vw 0 3vw;
+  line-height: 36px;
+}
+#author {
+  margin-top: 3vh;
+  font-size: 0.5em;
+  color: #a0a0a6;
+}
+@media (max-width: 1069px) {
+  #quote {
+    height: calc(100vh - ((454 * 100vw) / 1070));
+    max-height: 50vh;
+  }
+}
+@media (max-width: 700px) {
+  #quote {
+    width: 65%;
+    margin-left: 17.5%;
+  }
+  #text {
+    font-size: 28px;
+    margin-top: 30px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 500px) {
+  #quote {
+    position: relative;
+    max-height: 40vh;
+    width: 90%;
+    margin-left: 5%;
+  }
+  #text {
+    margin-top: 0px;
+    margin-top: 26px;
+    line-height: 26px;
+  }
+}
+
+/*--------------------------- buttons -----------------------*/
+#buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#tweet-quote,
+#new-quote {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 20px;
+  line-height: 1em;
+  color: #606066;
+}
+
+#new-quote {
+  text-align: start;
+  padding-left: 2vw;
+}
+
+#tweet-quote {
+  text-align: right;
+  padding-right: 2vw;
+}
+
+p:hover,
+#tweet-quote:hover {
+  cursor: pointer;
+  text-decoration-line: none;
+  animation-name: colorChange;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes colorChange {
+  100% {
+    color: #a0a0a6;
+  }
+}
